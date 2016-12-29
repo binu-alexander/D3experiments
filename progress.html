@@ -36,6 +36,10 @@
    }
 </style>
 <body>
+
+   <H1>
+       PROGRESS FOR CURRENT PROJECT BY BOOK AND MILESTONE - Everything is clickable !
+   </H1>
    <div id='dashboard'></div>
    <script src="http://d3js.org/d3.v3.min.js"></script>
    <script>
@@ -44,7 +48,7 @@
           function segColor(c){ return {Stage1:"#807dba", Stage2:"#e08214",Stage3:"#41ab5d"}[c]; }
           
           // compute total for each Book.
-          fData.forEach(function(d){d.total=d.TT;});
+          fData.forEach(function(d){d.total=d.TotalChap;});
           
           // function to handle histogram.
           function histoGram(fD){
@@ -239,11 +243,11 @@
    <script>
       var freqData=[
       
-      ﻿{Book:'Genesis',TT:50,freq:{Stage1:10, Stage2:5, Stage3:4,Remaining:31}}
-      ,{Book:'Exodus',TT:40,freq:{Stage1:5, Stage2:3, Stage3:1,Remaining:32}}
-      ,{Book:'Leviticus',TT:27,freq:{Stage1:5, Stage2:2, Stage3:1,Remaining:19}}
-      ,{Book:'Numbers',TT:36,freq:{Stage1:2, Stage2:0, Stage3:0,Remaining:34}}
-      ,{Book:'Deuteronomy',TT:45,freq:{Stage1:3, Stage2:1, Stage3:1,Remaining:40}}
+      ﻿{Book:'Genesis',TotalChap:50,freq:{Stage1:10, Stage2:5, Stage3:4,Remaining:31}}
+      ,{Book:'Exodus',TotalChap:40,freq:{Stage1:5, Stage2:3, Stage3:1,Remaining:32}}
+      ,{Book:'Leviticus',TotalChap:27,freq:{Stage1:5, Stage2:2, Stage3:1,Remaining:19}}
+      ,{Book:'Numbers',TotalChap:36,freq:{Stage1:2, Stage2:0, Stage3:0,Remaining:34}}
+      ,{Book:'Deuteronomy',TotalChap:45,freq:{Stage1:3, Stage2:1, Stage3:1,Remaining:40}}
       
       
       
